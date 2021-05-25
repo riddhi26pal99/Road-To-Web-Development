@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    color: #262626;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90% ;
+    max-width: 1500px;
+    margin: auto;
+}
+
+/*  NAV */
+
+.nav__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.logo {
+    height: 70px;
+    width: 120px;
+    object-fit: contain;
+    margin-left: 15px;
+}
+
+.nav__menuleft {
+    display: flex;
+    flex: 0.95;
+} 
+
+.nav__menuRight {
+    display: flex;
+    align-items: center;
+}
+
+.nav__menuleft > li,
+.nav__menuRight > li {
+    padding : 2px 20px ;
+}
+
+.nav__menuleft > li:hover,
+.nav__menuRight > li:hover {
+    border-bottom: solid black 2px;
+}
+
+.sign__in {
+    display: flex;
+    align-items: center;
+}
+
+.sign__in > img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* Showcase */
+
+.showcase {
+    background: url('https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/RE3LFEJ11.jpg') no-repeat center right/contain;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: solid 1px whitesmoke;
+    justify-content: center;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.showcase > h1,
+.showcase > p ,
+.showcase > a{
+    padding: 5px;
+    width: 35rem;
+    margin-left: 30px;
+}
+
+.showcase > h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.showcase > p {
+    font-size: 1.1rem;
+}
+
+/* utilities */
+
+.btn {
+    background-color: black;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    font-size: medium;
+    padding: 10px 30px;
+    align-self: center;
+}
+
+.btn:hover {
+    text-decoration: underline white 2px;
+    background-color: #262626;
+    transform: scaleX(1.05);
+}
+
+
+/* Mini Cards */
+
+.mini__cards {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab > h3 {
+    font-weight: 500;
+    width: 200px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.tab > img,
+.tab > img,
+.tab > img,
+.tab > img{
+    align-self: center;
+    justify-self: center;
+}
+
+.tab:hover,
+.tab:hover,
+.tab:hover,
+.tab:hover {
+    cursor: pointer;
+    text-decoration: underline black 2px;
+}
+
+/* Main cards */
+
+.cards,
+.cards2 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card > h2,
+.card > p,
+.card > a {
+
+    display: inline-flex;
+    align-self: flex-start;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.card > img {
+    width: 350px;
+    height: 200px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.20);
+}
+
+.card > img:hover {
+    opacity: 0.90;
+}
+
+.card > p {
+    font-size: 1rem;
+}
+
+.card > h2 {
+    font-weight: 500 
+}
+
+.card > a {
+    color: rgb(35, 86, 255);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.card-2 {
+    display: flex;
+    width: 90%;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-2 > a {
+    color: rgb(35, 86, 255);
+    font-weight: 600;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.card > a:hover,
+.card-2 > a:hover {
+    text-decoration: underline rgb(35, 86, 255) 2px;
+}
+
+/* Central Image */
+
+.central__image {
+    background: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4ncJa") no-repeat center center/cover;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px whitesmoke;
+    justify-content: flex-start;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
+}
+
+
+.central__image > h1,
+.central__image > p ,
+.central__image > a {
+    text-align: center;
+    padding: 5px;
+    width: 35rem;
+    margin-left: 30px;
+}
+
+.central__image > h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.central__image > p {
+    font-size: 1.1rem;
+}
+
+/* Notice section */
+
+.notice__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #dfdfdf ;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.notice__container > h1 {
+    font-size: 2.5rem !important;
+    font-weight: 500;
+}
+
+.notice__container > p {
+    font-size: 1rem;
+}
+
+.notice__container > a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Social Links */
+
+.social__links{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__links > p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #5c5c5c
+}
+
+.social__links > a:hover {
+    opacity: 0.7;
+}
+
+/* footer */
+
+.footer {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+.colums > h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color:rgb(73, 73, 73);
+}
+
+.colums > p {
+    line-height: 3;
+    font-size: 13px;
+    font-weight: 400;
+    color:rgb(97, 97, 97);
+}
+
+/* Info */
+
+.extra__info {
+    background-color: #f0f0f0;
+    display: flex;
+    width: 100%;
+    padding: 1rem 4rem ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__left {
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    color:rgb(97, 97, 97);
+}
+
+.info__right > a {
+    padding: 0px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color:rgb(97, 97, 97);
+}
+
+.colums > p:hover,
+.info__left > a:hover  {
+    border-bottom: solid 1px #737373;
+}
